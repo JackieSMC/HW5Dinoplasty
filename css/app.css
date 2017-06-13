@@ -21,6 +21,12 @@
 .dino-name {
   flex-grow: 1;
   margin-right: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dino-diet {
+  margin-right: 2rem;
 }
 
 .actions.button-group {
@@ -31,6 +37,7 @@
   background-color: #0DA8FF;
   border-color: #0DFFFF;
 }
+
 .dino:first-child .move-up,
 .dino:last-child .move-down {
   background-color: #ddd;
