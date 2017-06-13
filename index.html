@@ -14,8 +14,8 @@
        <!--<div class="row">-->
            <div class="top-bar">
                <div class="top-bar-left">
-                   <ul class="dropdownmenu" data-dropdown-menu>
-                       <li class="menu-text">Dinoplasty</li>
+                   <ul class="dropdown menu" data-dropdown-menu>
+                       <li class="menu-text">Dinos</li>
                        <li><a class="carnivore-menu" href="#">Carnivore</a></li>
                        <li><a class="herbivore-menu" href="#">Herbivore</a></li>
                        <li><a class="omnivore-menu" href="#">Omnivore</a></li>
@@ -23,15 +23,15 @@
                </div>
                <div class="top-bar-right">
                    <ul class="menu">
-                    <li>
-                        <input type="searchBar" placeholder="Search"></li>
-                        <li><button type="button" class="searchButton button">Hunt</button></li>
+                        <li>
+                            <input type="searchBar" placeholder="Search"></li>
+                            <li><button type="button" class="searchButton button">Hunt</button></li>
                     </ul>
                </div>
            </div>
            <div class="row search">
             <div class="medium-8 medium-offset-2 column">
-                <h1>Dino</h1>
+                <h1>DinoFun!</h1>
                 <form id="dino-form" >
                     <div class="row">
                         <div class = "small-5 column">
@@ -40,9 +40,9 @@
                         <div class="small-4 column">
                             <select required name="diet">
                                 <option value="">-- Diet --</option>
-                                <option value="">Carnivore</option>
-                                <option value="">Herbivore</option>
-                                <option value="">Omnivore</option>
+                                <option value="carnivore">Carnivore</option>
+                                <option value="herbivore">Herbivore</option>
+                                <option value="omnivore">Omnivore</option>
                             </select>
                         </div>
                         <div class="small-3 column">
@@ -50,6 +50,7 @@
                             <!--<i class="fa fa-plus" aria-hidden ="true"></i>-->
                                 
                             </button>
+                            <!--<button type ="button" onclick="backgroundImage()"> Press me for Something Cool</button>-->
                         </div>
                     </div>
                 </form>
@@ -101,6 +102,10 @@
                 </button>
             </span>
         </li>
-        <script src="app.js"></script>
+        <script src="app.js">
+            //backgroundImage() {
+                //document.body.style.backgroundImage = "url('Dinosaur-HD-wallpaper.jpg')";
+            //}
+        </script>
     </body>
 </html>
