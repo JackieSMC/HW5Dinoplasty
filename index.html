@@ -11,31 +11,49 @@
         <link rel="stylesheet" href="css/app.css">
     </head>
     <body>
-       <div class="row">
-           <div class="medium-8 medium-offset-2 column">
-               <h1>Dino</h1>
-               <form id="dino-form" >
-                   <div class="row">
-                   <div class = "small-5 column">
-                        <input type="text" name="dinoName" placeholder="Name a Dino" autofocus required>
-                   </div>
-                   <div class="small-4 column">
-                       <select name="diet">
-                           <option value="">-- Diet --</option>
-                           <option value="">Carnivore</option>
-                           <option value="">Herbivore</option>
-                           <option value="">Omnivore</option>
-                       </select>
-                   </div>
+       <!--<div class="row">-->
+           <div class="top-bar">
+               <div class="top-bar-left">
+                   <ul class="dropdownmenu" data-dropdown-menu>
+                       <li class="menu-text">Dinoplasty</li>
+                       <li><a class="carnivore-menu" href="#">Carnivore</a></li>
+                       <li><a class="herbivore-menu" href="#">Herbivore</a></li>
+                       <li><a class="omnivore-menu" href="#">Omnivore</a></li>
+                   </ul>
+               </div>
+               <div class="top-bar-right">
+                   <ul class="menu">
+                    <li>
+                        <input type="searchBar" placeholder="Search"></li>
+                        <li><button type="button" class="searchButton button">Hunt</button></li>
+                    </ul>
+               </div>
+           </div>
+           <div class="row search">
+            <div class="medium-8 medium-offset-2 column">
+                <h1>Dino</h1>
+                <form id="dino-form" >
+                    <div class="row">
+                        <div class = "small-5 column">
+                                <input type="text" name="dinoName" placeholder="Name a Dino" autofocus required>
+                        </div>
+                        <div class="small-4 column">
+                            <select required name="diet">
+                                <option value="">-- Diet --</option>
+                                <option value="">Carnivore</option>
+                                <option value="">Herbivore</option>
+                                <option value="">Omnivore</option>
+                            </select>
+                        </div>
                         <div class="small-3 column">
                             <button type="submit" class="button primary expanded"> Dino In
-                               <!--<i class="fa fa-plus" aria-hidden ="true"></i>-->
+                            <!--<i class="fa fa-plus" aria-hidden ="true"></i>-->
                                 
                             </button>
                         </div>
-                   </div>
-               </form>
-           </div>
+                    </div>
+                </form>
+            </div>
        </div>
        
        <div class="row">
@@ -43,6 +61,25 @@
                <ul id="dino-list" class="no-bullet"></ul>
            </div>
        </div>
+
+        <div class="row">
+           <div class="medium-8 medium-offset-2 column">
+               <ul id="dino-carnivore" class="no-bullet"></ul>
+           </div>
+       </div>
+
+        <div class="row">
+           <div class="medium-8 medium-offset-2 column">
+               <ul id="dino-herbivore" class="no-bullet"></ul>
+           </div>
+       </div>
+
+        <div class="row">
+           <div class="medium-8 medium-offset-2 column">
+               <ul id="dino-omnivore" class="no-bullet"></ul>
+           </div>
+       </div>
+
         <li class="dino template">
             <span class="dino-name"></span>
             <span class="dino-diet"></span>
