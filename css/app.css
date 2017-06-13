@@ -28,8 +28,8 @@
 }
 
 .dino.fav {
-  background-color: #ffc656;
-  border-color: #ffa807;
+  background-color: #0DA8FF;
+  border-color: #0DFFFF;
 }
 .dino:first-child .move-up,
 .dino:last-child .move-down {
